@@ -1,0 +1,998 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Coal_Blending_View.ico"
+IDR_Coal_Blending_VTYPE ICON                    "res\\Coal_Blending_ViewDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT,MFT_STRING,MFS_ENABLED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW,MFT_STRING,MFS_ENABLED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&View",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        POPUP "&Toolbars and Docking Windows",  65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "<placeholder>",               ID_VIEW_TOOLBAR,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR,MFT_STRING,MFS_ENABLED
+        POPUP "&Application Look",              65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Windows &2000",               ID_VIEW_APPLOOK_WIN_2000,MFT_STRING,MFS_ENABLED
+            MENUITEM "Office &XP",                  ID_VIEW_APPLOOK_OFF_XP,MFT_STRING,MFS_ENABLED
+            MENUITEM "&Windows XP",                 ID_VIEW_APPLOOK_WIN_XP,MFT_STRING,MFS_ENABLED
+            MENUITEM "Office 200&3",                ID_VIEW_APPLOOK_OFF_2003,MFT_STRING,MFS_ENABLED
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005,MFT_STRING,MFS_ENABLED
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008,MFT_STRING,MFS_ENABLED
+            POPUP "Office 200&7",                   65535,MFT_STRING,MFS_ENABLED
+            BEGIN
+                MENUITEM "&Blue Style",                 ID_VIEW_APPLOOK_OFF_2007_BLUE,MFT_STRING,MFS_ENABLED
+                MENUITEM "B&lack Style",                ID_VIEW_APPLOOK_OFF_2007_BLACK,MFT_STRING,MFS_ENABLED
+                MENUITEM "&Silver Style",               ID_VIEW_APPLOOK_OFF_2007_SILVER,MFT_STRING,MFS_ENABLED
+                MENUITEM "&Aqua Style",                 ID_VIEW_APPLOOK_OFF_2007_AQUA,MFT_STRING,MFS_ENABLED
+            END
+        END
+    END
+    POPUP "&Help",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&About Coal_Blending_View...", ID_APP_ABOUT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "SILO",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "COAL MINES",                  ID_SILO_COALMINES,MFT_STRING,MFS_ENABLED
+        MENUITEM "1-53 SILO STOCK",             ID_SILO_1_53,MFT_STRING,MFS_ENABLED
+        MENUITEM "2- 54 SILO STOCK",            ID_SILO_2,MFT_STRING,MFS_ENABLED
+        MENUITEM "2A - 54A SILO STOCK",         ID_SILO_2A,MFT_STRING,MFS_ENABLED
+    END
+    MENUITEM MFT_SEPARATOR
+    POPUP "                      Y18",      65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Current Value",               ID_Y18_CURRENTVALUE,MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM "Specify_Range",               ID_Y18_SPECIFY,MFT_STRING,MFS_ENABLED
+        MENUITEM "Blend %",                     ID_Y18_BLEND,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "&About Coal_Blending_View...", ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Coal_Blending_View"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Coal_Blending_View, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "Coal_Blending_View"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Coal_Blending_View.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Coal_Blending_View.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Coal_Blending_View\n\nCoal_Blending_V\n\n\nCoalBlendingView.Document\nCoal_Blending_View.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Coal_Blending_View"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "Pane 1"
+    IDS_STATUS_PANE2        "Pane 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "Edit"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Y18_CURRENT_VALUE_DIALOG DIALOGEX 0, 0, 571, 342
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 16, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,185,314,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,320,314,50,14
+END
+
+IDD_BLEND_PERCT_DIALOG DIALOGEX 0, 0, 555, 396
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 16, "Arial", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,296,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,242,295,50,14
+    PUSHBUTTON      "Refresh",IDREFRESH1,307,294,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_Y18_CURRENT_VALUE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 564
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_BLEND_PERCT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 548
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 389
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (India) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENN)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_INDIA
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SILO_SOURCE_MENU MENU
+BEGIN
+    MENUITEM "CHANGE SOURCE",               ID_CHANGESOURCE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COAL_SILO_SOURCE DIALOGEX 0, 0, 652, 414
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+MENU IDR_SILO_SOURCE_MENU
+FONT 14, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,584,373,50,14
+END
+
+IDD_CHANGE_SOURCE_DIALOG DIALOGEX 0, 0, 463, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 14, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,152,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,226,179,50,14
+    LTEXT           "SILO NUMBER",IDC_STATIC,113,35,51,9
+    LTEXT           "COAL SOURCE",IDC_STATIC,216,36,51,9
+    COMBOBOX        IDC_COMBO1,114,48,48,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,216,48,48,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Save Changes",IDC_BUTTON1,293,45,61,14
+END
+
+IDD_SET_COAL_STOCK_DIALOG DIALOGEX 0, 0, 506, 278
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 14, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,240,246,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,306,246,30,14
+    LTEXT           "Silo # 01",IDC_STATIC,21,18,30,8
+    LTEXT           "Silo # 03",IDC_STATIC,21,35,30,8
+    LTEXT           "Silo # 05",IDC_STATIC,20,53,30,8
+    LTEXT           "Silo # 07",IDC_STATIC,20,71,30,8
+    LTEXT           "Silo # 09",IDC_STATIC,20,89,30,8
+    LTEXT           "Silo # 11",IDC_STATIC,20,106,30,8
+    LTEXT           "Silo # 13",IDC_STATIC,20,123,30,8
+    LTEXT           "Silo # 15",IDC_STATIC,19,141,30,8
+    LTEXT           "Silo # 17",IDC_STATIC,19,159,30,8
+    LTEXT           "Silo # 19",IDC_STATIC,19,177,30,8
+    LTEXT           "Silo # 21",IDC_STATIC,19,195,30,8
+    LTEXT           "Silo # 23",IDC_STATIC,19,212,30,8
+    LTEXT           "Silo # 25",IDC_STATIC,18,230,30,8
+    LTEXT           "Silo # 27",IDC_STATIC,18,248,30,8
+    LTEXT           "Silo # 29",IDC_STATIC,226,17,27,8
+    LTEXT           "Silo # 31",IDC_STATIC,225,34,27,8
+    LTEXT           "Silo # 33",IDC_STATIC,225,52,27,8
+    LTEXT           "Silo # 35",IDC_STATIC,225,70,27,8
+    LTEXT           "Silo # 37",IDC_STATIC,225,88,27,8
+    LTEXT           "Silo # 39",IDC_STATIC,225,105,27,8
+    LTEXT           "Silo # 41",IDC_STATIC,225,122,28,8
+    LTEXT           "Silo # 43",IDC_STATIC,224,140,27,8
+    LTEXT           "Silo # 45",IDC_STATIC,224,158,27,8
+    LTEXT           "Silo # 47",IDC_STATIC,224,176,27,8
+    LTEXT           "Silo # 49",IDC_STATIC,224,194,27,8
+    LTEXT           "Silo # 51",IDC_STATIC,223,210,30,8
+    LTEXT           "Silo # 53",IDC_STATIC,223,229,27,8
+    EDITTEXT        IDC_SET_S1_EDIT,51,16,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S1_EDIT,81,16,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 1",IDC_S1_BUTTON,116,16,55,12
+    EDITTEXT        IDC_SET_S3_EDIT,51,35,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S3_EDIT,81,35,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 3",IDC_S3_BUTTON,116,35,55,12
+    EDITTEXT        IDC_SET_S5_EDIT,51,53,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S5_EDIT,81,53,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 5",IDC_S5_BUTTON,116,53,55,12
+    EDITTEXT        IDC_SET_S7_EDIT,51,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S7_EDIT,81,70,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 7",IDC_S7_BUTTON,116,70,55,12
+    EDITTEXT        IDC_SET_S9_EDIT,51,88,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S9_EDIT,81,88,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 9",IDC_S9_BUTTON,116,88,55,12
+    EDITTEXT        IDC_SET_S11_EDIT,51,105,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S11_EDIT,82,105,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 11",IDC_S11_BUTTON,116,105,55,12
+    EDITTEXT        IDC_SET_S13_EDIT,51,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S13_EDIT,82,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 13",IDC_S13_BUTTON,116,122,55,12
+    EDITTEXT        IDC_SET_S15_EDIT,51,141,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S15_EDIT,82,141,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 15",IDC_S15_BUTTON,116,141,55,12
+    EDITTEXT        IDC_SET_S17_EDIT,51,159,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S17_EDIT,82,159,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 17",IDC_S17_BUTTON,116,159,55,12
+    EDITTEXT        IDC_SET_S19_EDIT,51,177,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S19_EDIT,82,177,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 19",IDC_S19_BUTTON,116,177,55,12
+    EDITTEXT        IDC_SET_S21_EDIT,51,195,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S21_EDIT,82,195,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 21",IDC_S21_BUTTON,116,195,55,12
+    EDITTEXT        IDC_SET_S23_EDIT,51,213,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S23_EDIT,82,213,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 23",IDC_S23_BUTTON,116,213,55,12
+    EDITTEXT        IDC_SET_S25_EDIT,51,231,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S25_EDIT,82,231,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 25",IDC_S25_BUTTON,116,231,55,12
+    EDITTEXT        IDC_SET_S27_EDIT,51,248,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S27_EDIT,82,248,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 27",IDC_S27_BUTTON,116,248,55,12
+    EDITTEXT        IDC_SET_S29_EDIT,259,15,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S29_EDIT,289,15,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 29",IDC_S29_BUTTON,324,15,55,12
+    EDITTEXT        IDC_SET_S31_EDIT,259,33,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S31_EDIT,289,33,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 31",IDC_S31_BUTTON,324,33,55,12
+    EDITTEXT        IDC_SET_S33_EDIT,259,51,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S33_EDIT,289,51,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 33",IDC_S33_BUTTON,324,51,55,12
+    EDITTEXT        IDC_SET_S35_EDIT,259,69,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S35_EDIT,289,69,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 35",IDC_S35_BUTTON,324,69,55,12
+    EDITTEXT        IDC_SET_S37_EDIT,259,87,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S37_EDIT,289,87,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 37",IDC_S37_BUTTON,324,87,55,12
+    EDITTEXT        IDC_SET_S39_EDIT,259,104,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S39_EDIT,289,104,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 39",IDC_S39_BUTTON,324,104,55,12
+    EDITTEXT        IDC_SET_S41_EDIT,259,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S41_EDIT,289,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 41",IDC_S41_BUTTON,324,122,55,12
+    EDITTEXT        IDC_SET_S43_EDIT,259,140,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S43_EDIT,289,140,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 43",IDC_S43_BUTTON,324,140,55,12
+    EDITTEXT        IDC_SET_S45_EDIT,259,158,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S45_EDIT,289,158,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 45",IDC_S45_BUTTON,324,158,55,12
+    EDITTEXT        IDC_SET_S47_EDIT,259,174,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S47_EDIT,289,174,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 47",IDC_S47_BUTTON,324,174,55,12
+    EDITTEXT        IDC_SET_S49_EDIT,259,192,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S49_EDIT,289,192,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 49",IDC_S49_BUTTON,324,192,55,12
+    EDITTEXT        IDC_SET_S51_EDIT,259,210,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S51_EDIT,289,210,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 51",IDC_S51_BUTTON,324,210,55,12
+    EDITTEXT        IDC_SET_S53_EDIT,259,228,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S53_EDIT,289,228,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 53",IDC_S53_BUTTON,324,228,55,12
+    LTEXT           "Silo Stock Entry (For Silo # 1- 53)",IDC_STATIC,160,2,116,8
+END
+
+IDD_SET_COAL_STOCK_2_54_DIALOG DIALOGEX 0, 0, 506, 278
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 14, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,240,246,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,306,246,30,14
+    LTEXT           "Silo # 02",IDC_STATIC,21,18,27,8
+    LTEXT           "Silo # 04",IDC_STATIC,21,35,30,8
+    LTEXT           "Silo # 06",IDC_STATIC,20,53,30,8
+    LTEXT           "Silo # 08",IDC_STATIC,20,71,30,8
+    LTEXT           "Silo # 10",IDC_STATIC,20,89,30,8
+    LTEXT           "Silo # 12",IDC_STATIC,20,106,30,8
+    LTEXT           "Silo # 14",IDC_STATIC,20,123,30,8
+    LTEXT           "Silo # 16",IDC_STATIC,19,141,30,8
+    LTEXT           "Silo # 18",IDC_STATIC,19,159,30,8
+    LTEXT           "Silo # 20",IDC_STATIC,19,177,30,8
+    LTEXT           "Silo # 22",IDC_STATIC,19,195,30,8
+    LTEXT           "Silo # 24",IDC_STATIC,19,212,30,8
+    LTEXT           "Silo # 26",IDC_STATIC,18,230,30,8
+    LTEXT           "Silo # 28",IDC_STATIC,18,248,30,8
+    LTEXT           "Silo # 30",IDC_STATIC,226,17,27,8
+    LTEXT           "Silo # 32",IDC_STATIC,225,34,27,8
+    LTEXT           "Silo # 34",IDC_STATIC,225,52,27,8
+    LTEXT           "Silo # 36",IDC_STATIC,225,70,27,8
+    LTEXT           "Silo # 38",IDC_STATIC,225,88,27,8
+    LTEXT           "Silo # 40",IDC_STATIC,225,105,27,8
+    LTEXT           "Silo # 42",IDC_STATIC,225,122,28,8
+    LTEXT           "Silo # 44",IDC_STATIC,224,140,27,8
+    LTEXT           "Silo # 46",IDC_STATIC,224,158,27,8
+    LTEXT           "Silo # 48",IDC_STATIC,224,176,27,8
+    LTEXT           "Silo # 50",IDC_STATIC,224,194,27,8
+    LTEXT           "Silo # 52",IDC_STATIC,223,210,30,8
+    LTEXT           "Silo # 54",IDC_STATIC,223,229,27,8
+    EDITTEXT        IDC_SET_S2_EDIT,51,16,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S2_EDIT,81,16,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 2",IDC_S2_BUTTON,116,16,55,12
+    EDITTEXT        IDC_SET_S4_EDIT,51,35,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S4_EDIT,81,35,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 4",IDC_S4_BUTTON,116,35,55,12
+    EDITTEXT        IDC_SET_S6_EDIT,51,53,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S6_EDIT,81,53,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 6",IDC_S6_BUTTON,116,53,55,12
+    EDITTEXT        IDC_SET_S8_EDIT,51,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S8_EDIT,81,70,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 8",IDC_S8_BUTTON,116,70,55,12
+    EDITTEXT        IDC_SET_S10_EDIT,51,88,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S10_EDIT,81,88,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 10",IDC_S10_BUTTON,116,88,55,12
+    EDITTEXT        IDC_SET_S12_EDIT,51,105,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S12_EDIT,82,105,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 12",IDC_S12_BUTTON,116,105,55,12
+    EDITTEXT        IDC_SET_S14_EDIT,51,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S14_EDIT,82,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 14",IDC_S14_BUTTON,116,122,55,12
+    EDITTEXT        IDC_SET_S16_EDIT,51,141,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S16_EDIT,82,141,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 16",IDC_S16_BUTTON,116,141,55,12
+    EDITTEXT        IDC_SET_S18_EDIT,51,159,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S18_EDIT,82,159,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 18",IDC_S18_BUTTON,116,159,55,12
+    EDITTEXT        IDC_SET_S20_EDIT,51,177,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S20_EDIT,82,177,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 20",IDC_S20_BUTTON,116,177,55,12
+    EDITTEXT        IDC_SET_S22_EDIT,51,195,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S22_EDIT,82,195,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 22",IDC_S22_BUTTON,116,195,55,12
+    EDITTEXT        IDC_SET_S24_EDIT,51,213,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S24_EDIT,82,213,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 24",IDC_S24_BUTTON,116,213,55,12
+    EDITTEXT        IDC_SET_S26_EDIT,51,231,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S26_EDIT,82,231,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 26",IDC_S26_BUTTON,116,231,55,12
+    EDITTEXT        IDC_SET_S28_EDIT,51,248,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S28_EDIT,82,248,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 28",IDC_S28_BUTTON,116,248,55,12
+    EDITTEXT        IDC_SET_S30_EDIT,259,15,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S30_EDIT,289,15,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 30",IDC_S30_BUTTON,324,15,55,12
+    EDITTEXT        IDC_SET_S32_EDIT,259,33,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S32_EDIT,289,33,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 32",IDC_S32_BUTTON,324,33,55,12
+    EDITTEXT        IDC_SET_S34_EDIT,259,51,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S34_EDIT,289,51,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 34",IDC_S34_BUTTON,324,51,55,12
+    EDITTEXT        IDC_SET_S36_EDIT,259,69,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S36_EDIT,289,69,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 36",IDC_S36_BUTTON,324,69,55,12
+    EDITTEXT        IDC_SET_S38_EDIT,259,87,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S38_EDIT,289,87,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 38",IDC_S38_BUTTON,324,87,55,12
+    EDITTEXT        IDC_SET_S40_EDIT,259,104,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S40_EDIT,289,104,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 40",IDC_S40_BUTTON,324,104,55,12
+    EDITTEXT        IDC_SET_S42_EDIT,259,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S42_EDIT,289,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 42",IDC_S42_BUTTON,324,122,55,12
+    EDITTEXT        IDC_SET_S44_EDIT,259,140,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S44_EDIT,289,140,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 44",IDC_S44_BUTTON,324,140,55,12
+    EDITTEXT        IDC_SET_S46_EDIT,259,158,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S46_EDIT,289,158,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 46",IDC_S46_BUTTON,324,158,55,12
+    EDITTEXT        IDC_SET_S48_EDIT,259,174,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S48_EDIT,289,174,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 48",IDC_S48_BUTTON,324,174,55,12
+    EDITTEXT        IDC_SET_S50_EDIT,259,192,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S50_EDIT,289,192,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 50",IDC_S50_BUTTON,324,192,55,12
+    EDITTEXT        IDC_SET_S52_EDIT,259,210,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S52_EDIT,289,210,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 52",IDC_S52_BUTTON,324,210,55,12
+    EDITTEXT        IDC_SET_S54_EDIT,259,228,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S54_EDIT,289,228,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 54",IDC_S54_BUTTON,324,228,55,12
+    LTEXT           "Silo Stock Entry (For Silo # 2- 54)",IDC_STATIC,160,2,116,8
+END
+
+IDD_SET_COAL_STOCK_2A_54A_DIALOG DIALOGEX 0, 0, 506, 278
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 14, "Garamond", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,240,246,30,14
+    PUSHBUTTON      "Cancel",IDCANCEL,306,246,30,14
+    LTEXT           "Silo # 2A",IDC_STATIC,21,18,33,8
+    LTEXT           "Silo # 4A",IDC_STATIC,21,35,33,8
+    LTEXT           "Silo # 6A",IDC_STATIC,20,53,34,8
+    LTEXT           "Silo # 8A",IDC_STATIC,20,71,34,8
+    LTEXT           "Silo # 10A",IDC_STATIC,20,89,34,8
+    LTEXT           "Silo # 12A",IDC_STATIC,20,106,34,8
+    LTEXT           "Silo # 14A",IDC_STATIC,20,123,34,8
+    LTEXT           "Silo # 16A",IDC_STATIC,19,141,35,8
+    LTEXT           "Silo # 18A",IDC_STATIC,19,159,35,8
+    LTEXT           "Silo # 20A",IDC_STATIC,19,177,35,8
+    LTEXT           "Silo # 22A",IDC_STATIC,19,195,35,8
+    LTEXT           "Silo # 24A",IDC_STATIC,19,212,35,8
+    LTEXT           "Silo # 26A",IDC_STATIC,18,230,36,8
+    LTEXT           "Silo # 28A",IDC_STATIC,18,248,36,8
+    LTEXT           "Silo # 30A",IDC_STATIC,226,17,32,8
+    LTEXT           "Silo # 32A",IDC_STATIC,225,34,33,8
+    LTEXT           "Silo # 34A",IDC_STATIC,225,52,33,8
+    LTEXT           "Silo # 36A",IDC_STATIC,225,70,33,8
+    LTEXT           "Silo # 38A",IDC_STATIC,225,88,33,8
+    LTEXT           "Silo # 40A",IDC_STATIC,225,105,33,8
+    LTEXT           "Silo # 42A",IDC_STATIC,225,122,33,8
+    LTEXT           "Silo # 44A",IDC_STATIC,224,140,34,8
+    LTEXT           "Silo # 46A",IDC_STATIC,224,158,34,8
+    LTEXT           "Silo # 48A",IDC_STATIC,224,176,34,8
+    LTEXT           "Silo # 50A",IDC_STATIC,224,194,34,8
+    LTEXT           "Silo # 52A",IDC_STATIC,223,210,35,8
+    LTEXT           "Silo # 54A",IDC_STATIC,223,229,35,8
+    EDITTEXT        IDC_SET_S2A_EDIT,59,16,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S2A_EDIT,89,16,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 2A",IDC_S2A_BUTTON,124,16,62,12
+    EDITTEXT        IDC_SET_S4A_EDIT,59,35,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S4A_EDIT,89,35,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 4A",IDC_S4A_BUTTON,124,35,62,12
+    EDITTEXT        IDC_SET_S6A_EDIT,59,53,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S6A_EDIT,89,53,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 6A",IDC_S6A_BUTTON,124,53,62,12
+    EDITTEXT        IDC_SET_S8A_EDIT,59,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S8A_EDIT,89,70,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 8A",IDC_S8A_BUTTON,124,70,62,12
+    EDITTEXT        IDC_SET_S10A_EDIT,59,88,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S10A_EDIT,89,88,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 10A",IDC_S10A_BUTTON,124,88,62,12
+    EDITTEXT        IDC_SET_S12A_EDIT,59,105,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S12A_EDIT,90,105,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 12A",IDC_S12A_BUTTON,124,105,62,12
+    EDITTEXT        IDC_SET_S14A_EDIT,59,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S14A_EDIT,90,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 14A",IDC_S14A_BUTTON,124,122,62,12
+    EDITTEXT        IDC_SET_S16A_EDIT,59,141,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S16A_EDIT,90,141,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 16A",IDC_S16A_BUTTON,124,141,62,12
+    EDITTEXT        IDC_SET_S18A_EDIT,59,159,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S18A_EDIT,90,159,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 18A",IDC_S18A_BUTTON,124,159,62,12
+    EDITTEXT        IDC_SET_S20A_EDIT,59,177,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S20A_EDIT,90,177,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 20A",IDC_S20A_BUTTON,124,177,62,12
+    EDITTEXT        IDC_SET_S22A_EDIT,59,195,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S22A_EDIT,90,195,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 22A",IDC_S22A_BUTTON,124,195,62,12
+    EDITTEXT        IDC_SET_S24A_EDIT,59,213,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S24A_EDIT,90,213,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 24A",IDC_S24A_BUTTON,124,213,62,12
+    EDITTEXT        IDC_SET_S26A_EDIT,59,231,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S26A_EDIT,90,231,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 26A",IDC_S26A_BUTTON,124,231,62,12
+    EDITTEXT        IDC_SET_S28A_EDIT,59,248,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S28A_EDIT,90,248,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 28A",IDC_S28A_BUTTON,124,248,62,12
+    EDITTEXT        IDC_SET_S30A_EDIT,263,15,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S30A_EDIT,293,15,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 30A",IDC_S30A_BUTTON,328,15,62,12
+    EDITTEXT        IDC_SET_S32A_EDIT,263,33,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S32A_EDIT,293,33,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 32A",IDC_S32A_BUTTON,328,33,62,12
+    EDITTEXT        IDC_SET_S34A_EDIT,263,51,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S34A_EDIT,293,51,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 34A",IDC_S34A_BUTTON,328,51,62,12
+    EDITTEXT        IDC_SET_S36A_EDIT,263,69,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S36A_EDIT,293,69,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 36A",IDC_S36A_BUTTON,328,69,62,12
+    EDITTEXT        IDC_SET_S38A_EDIT,263,87,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S38A_EDIT,293,87,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 38A",IDC_S38A_BUTTON,328,87,62,12
+    EDITTEXT        IDC_SET_S40A_EDIT,263,104,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S40A_EDIT,293,104,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 40A",IDC_S40A_BUTTON,328,104,62,12
+    EDITTEXT        IDC_SET_S42A_EDIT,263,122,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S42A_EDIT,293,122,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 42A",IDC_S42A_BUTTON,328,122,62,12
+    EDITTEXT        IDC_SET_S44A_EDIT,263,140,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S44A_EDIT,293,140,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 44A",IDC_S44A_BUTTON,328,140,62,12
+    EDITTEXT        IDC_SET_S46A_EDIT,263,158,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S46A_EDIT,293,158,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 46A",IDC_S46A_BUTTON,328,158,62,12
+    EDITTEXT        IDC_SET_S48A_EDIT,263,174,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S48A_EDIT,293,174,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 48A",IDC_S48A_BUTTON,328,174,62,12
+    EDITTEXT        IDC_SET_S50A_EDIT,263,192,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S50A_EDIT,293,192,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 50A",IDC_S50A_BUTTON,328,192,62,12
+    EDITTEXT        IDC_SET_S52A_EDIT,263,210,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S52A_EDIT,293,210,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 52A",IDC_S52A_BUTTON,328,210,62,12
+    EDITTEXT        IDC_SET_S54A_EDIT,263,228,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ST_S54A_EDIT,293,228,24,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Save SILO # 54A",IDC_S54A_BUTTON,328,228,62,12
+    LTEXT           "Silo Stock Entry (For Silo # 2A- 54A)",IDC_STATIC,160,2,116,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_COAL_SILO_SOURCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 645
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 407
+    END
+
+    IDD_CHANGE_SOURCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 456
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_SET_COAL_STOCK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_SET_COAL_STOCK_2_54_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_SET_COAL_STOCK_2A_54A_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 271
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\Coal_Blending_View.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (India) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\Coal_Blending_View.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
